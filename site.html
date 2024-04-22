@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaiqui viado</title>
+</head>
+<style>
+    body {
+        background-color: rgba(128, 145, 240, 0.842);
+    }
+    .kaiqui {
+        display:none
+    }
+    #movable {
+           
+            position: absolute;
+            transition: top 0.3s, left 0.3s; /* Suaviza a transição de posição */
+        }
+</style>
+<body>
+    <h1>kaiqui faz blowjobs</h1>
+    <a href="https://www.youtube.com/watch?v=izGwDsrQ1eQ">
+        <button onclick="kaiquiviado()">sim</button> 
+    </a>
+    <button id="movable">nao</button>
+
+    <img src="" alt="" class="kaiqui" id="1">
+    
+</body>
+<script>
+    const element = document.getElementById('movable');
+
+element.addEventListener('mouseover', () => {
+    const newX = Math.random() * window.innerWidth - element.clientWidth;
+    const newY = Math.random() * window.innerHeight - element.clientHeight;
+    element.style.left = `${newX}px`;
+    element.style.top = `${newY}px`;
+});
+    function kaiquiviado(){
+        let img = document.getElementById("1")
+        img.style.display = "block"
+    }
+</script>
+</html>
